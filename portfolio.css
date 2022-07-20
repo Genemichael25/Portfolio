@@ -1,0 +1,31 @@
+
+
+.header{ text-align: left;
+    font: bold;
+    font-style: oblique;
+    background-color:#4297A0 ;
+    height: 3in;
+}
+/* .fa-brands fa-github{size: 50px;
+
+} */
+
+.about{
+    background-color:#F4EAE6 ;
+    height: 3in;
+}
+
+.projects{
+    background-color:#E57F84 ;
+    color: #4297A0 ;
+    height: 3in;
+}
+
+.contact{
+    background-color:#2F5061 ;
+    color: #F4EAE6;
+    height: 3in;
+}
+/* ivory #F4EAE6
+coral #E57F84
+misty blue #2F5061 */
