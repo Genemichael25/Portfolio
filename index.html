@@ -6,41 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gene's Portfolio</title>
     <script src="https://kit.fontawesome.com/3e3fc24c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <link rel="stylesheet" href="portfolio.css">
-    <div class="header">
-        <h1>Gene Martinez</h1>
-        <div style="text-align: right;
-                    vertical-align:top;">
-            <i class="fa-brands fa-github fa-4x"></i>
-            <i class="fa-brands fa-linkedin fa-4x"></i>
+    <section class="header">
+        <nav>
+            <div>LOGO</div>
+            <ul>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="name">
+            <h1>Gene Martinez</h1>
+            <p>Full Stack Developer</p>
         </div>
-        <h3>Full Stack Developer</h3>
-    </div>
-    <div class="about">
+
+    </section>
+    
+    <section class="about">
         <h1>About Me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
-    </div>
-    <div class="projects">
-        <h3>Projects</h3>
+        <h1>Skills</h1>
+    </section>
+
+    <section class="projects">
+        <h1>Projects</h1>
         <table>
             <td>Project 1</td>
             <td>Project 2</td>
             <td>Project 3</td>
         </table>
-    </div>
+    </section>
     <br>
-    <br>
-    <br>
-    <div class="contact">
-        <h3>Lets create something together!</h3>
-        <form >
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email">
-        </form>
-    </div>
+    
+    <section class="contact">
+        <h1>Lets create something together!</h1>
+        <div class="form">
+            <form >
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email">
+            </form>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="icons">
+            <i class="fa-brands fa-github fa-5x"></i>
+            <i class="fa-brands fa-linkedin fa-5x"></i>
+        </div>
+    </section>
 </body>
 </html>
