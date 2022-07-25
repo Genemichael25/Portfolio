@@ -1,11 +1,114 @@
+/* Controls the fade in of logo and name when page is loaded */
+
+.fade-in,.name {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+/* Used for a tags to give hover effect  */
+a {
+    background-image: linear-gradient(
+      to right,
+      #43c5f5,
+      #43c5f5 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before{
+    content: '';
+    background: #43c5f5;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+
+  /* ------------------------------------------------------------ */
+section {
+    height: 100vh;
+}
+
 .header { 
     font: bold;
     font-style: oblique;
-    background-color:#4297A0 ;
-    height: 500px;
+    background-color:#444444;
+    /* height: 100vh; */
     color:white;
     font-size:40px ;
-    border: solid black 2px;
+    background-image: url(https://www.fabmood.com/inspiration/wp-content/uploads/2020/02/teal-sky.jpg);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.icon{
+    margin-left: -145px;
 }
 
 nav {
@@ -16,7 +119,7 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    font-size: 40px;
+    font-size: 30px;
     width: 500px;
     justify-content: space-around;
 }
@@ -27,24 +130,48 @@ li {
 
 .name {
     margin-left: 20px;
-    margin-top: 170px;
+    margin-top: 130px;
+    /* background-image: linear-gradient(to right,#444444, black ); */
 }
 .about{
-    background-color:#F4EAE6 ;
-    height: 500px;
+    background-color:#0b4e58 ;
+    /* height: 500px; */
+    color:white;
+    /* border: solid white 2px; */
+}
+
+.skills {
+    width:1000px;
+    margin-top: 150px;
 }
 
 .projects{
-    background-color:#E57F84 ;
-    color: black ;
-    height: 500px;
+    background-color:#faa05b ;
+    /* height: 500px; */
     justify-items: space-between;
+    color:black;
+}
+
+.project_table{
+    width: 1000px;
+    font-size: 40px;
+    border: solid black 2px;
+    text-align: center;
+}
+
+tr, td {
+    /* border: solid black 2px; */
+    text-align: center;
+}
+
+.info {
+    height: 350px;
 }
 
 .contact{
-    background-color:#2F5061 ;
+    background-color:#e6a792;
     color: white;
-    height: 500px;
+    /* height: 500px; */
     width: 500px;
     align-self: center;
     margin-left: 50px;
@@ -59,6 +186,18 @@ li {
     justify-content: space-between;
     text-align: right;
 }
+
+a {
+    text-decoration:none;
+    color:white;
+}
+
+footer,.footer{
+    color:black;
+    text-align: center;
+    font-size: 30px;
+}
 /* ivory #F4EAE6
 coral #E57F84
 misty blue #2F5061 */
+/* #2b1d5a */

@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <section class="header">
+    
+    <section class="header" id="header">
         <nav>
-            <div>LOGO</div>
+            <div class="fade-in">
+            <img class="icon" src = "G.png" alt = "Icon" height="200px" width="200px" />
+            </div>
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about-me">.About Me.</a></li>
+                <li><a href="#projects">.Projects.</a></li>
+                <li><a href="#contact">.Contact.</a></li>
             </ul>
         </nav>
         <div class="name">
@@ -25,23 +28,49 @@
 
     </section>
     
-    <section class="about">
+    <section class="about" id="about-me">
         <h1>About Me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
+        <br>
+        <br>
+        <br>
         <h1>Skills</h1>
-    </section>
-
-    <section class="projects">
-        <h1>Projects</h1>
-        <table>
-            <td>Project 1</td>
-            <td>Project 2</td>
-            <td>Project 3</td>
+        <table class="skills">
+            <tr>
+                <td><i class="fa-brands fa-js fa-5x"></i></td>
+                <td><i class="fa-brands fa-react fa-5x"></i></td>
+                <td><img src = "https://www.pngfind.com/pngs/b/344-3441378_ruby-on-rails-png.png" alt = "Rails Icon" height="75px" width="100px" /></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td>JavaScript</td>
+                <td>React</td>
+                <td>Ruby on Rails</td>
+                <td>Postgresql</td>
+            </tr>
         </table>
+    </section>
+  
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <table class="project_table">
+            <tr >
+                <td>Project 1</td>
+                <td>Project 2</td>
+                <td>Project 3</td>
+            </tr>
+            <tr class="info">
+                <td>info here</td>
+                <td>info here</td>
+                <td>info here</td>
+            </tr>
+            </table>
     </section>
     <br>
     
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>Lets create something together!</h1>
         <div class="form">
             <form >
@@ -55,9 +84,10 @@
         <br/>
         <br/>
         <div class="icons">
-            <i class="fa-brands fa-github fa-5x"></i>
+            <a href="https://github.com/Genemichael25" title="Github"><i class="fa-brands fa-github fa-5x"></i></a>
             <i class="fa-brands fa-linkedin fa-5x"></i>
         </div>
     </section>
 </body>
+<footer> Gene Martinez | <a href="#header" class="footer">Back to Top</a> </footer>
 </html>
