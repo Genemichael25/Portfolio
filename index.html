@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gene's Portfolio</title>
     <script src="https://kit.fontawesome.com/3e3fc24c61.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./src/images/G.png">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
@@ -13,36 +14,48 @@
     <section class="header" id="header">
         <nav>
             <div class="fade-in">
-            <img class="icon" src = "G.png" alt = "Icon" height="200px" width="200px" />
+            <img class="icon" src = "./src/images/G.png" alt = "Icon" height="200px" width="200px" />
             </div>
-            <ul>
+            <ul id="nav-list">
                 <li><a href="#about-me">.About Me.</a></li>
                 <li><a href="#projects">.Projects.</a></li>
                 <li><a href="#contact">.Contact.</a></li>
             </ul>
+            <!-- <button class="hamburger" id="hamburger">
+                <i class="fas fa bars"></i> -->
+            </button>
         </nav>
-        <div class="name">
-            <h1>Gene Martinez</h1>
+        <h1 class="fade-in" id="name">Gene Martinez</h1>
+        <div class="fade-in2">
             <p>Full Stack Developer</p>
         </div>
 
     </section>
     
     <section class="about" id="about-me">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel dicta doloremque consectetur impedit et sunt assumenda harum, saepe aliquam ea voluptatem veniam iste, mollitia tempore? Quae cumque minima ratione?</p>
+        <div class="info">
+            <h2>About Me</h2>
+            <p>Hey! I'm Gene, an Army veteran and now a full stack web developer. Over the last couple of years I recognized my love for learning, problem solving and helping others. And now I have found something that allows me to do all those things and more. </p>
+            <p>Hey! I'm Gene, an Army veteran and now a full stack web developer. Over the last couple of years I recognized my love for learning, problem solving and helping others.  </p>
+        </div>
+        <div class="headshot_container" >
+            <img class="headshot" src="./src/images/104329785.jpeg" alt="gene headshot"/>
+        </div>
         <br>
         <br>
         <br>
-        <h1>Skills</h1>
-        <table class="skills">
+    </section>
+
+    <section class="skills" >
+        <div class="title">
+            <h2>Skills</h2>
+        </div>
+        <table class="skills_table">
             <tr>
                 <td><i class="fa-brands fa-js fa-5x"></i></td>
                 <td><i class="fa-brands fa-react fa-5x"></i></td>
                 <td><img src = "https://www.pngfind.com/pngs/b/344-3441378_ruby-on-rails-png.png" alt = "Rails Icon" height="75px" width="100px" /></td>
-                <td></td>
+                <td><img src = "./src/images/pngegg.png" alt = "Postgresql Icon"  /></td>
             </tr> 
             <tr>
                 <td>JavaScript</td>
@@ -54,38 +67,38 @@
     </section>
   
     <section class="projects" id="projects">
-        <h1>Projects</h1>
-        <table class="project_table">
-            <tr >
-                <td>Project 1</td>
-                <td>Project 2</td>
-                <td>Project 3</td>
-            </tr>
-            <tr class="info">
-                <td>info here</td>
-                <td>info here</td>
-                <td>info here</td>
-            </tr>
-            </table>
+        <div class="title">
+            <h2 >Projects</h2>
+        </div>
+        <div class="project_container">
+            <div class="project_card">
+                <img class="project-image" src="./src/images/Screen-Recording-2022-07-27-at-1.gif" />
+                <h3>Blog Posts</h3>
+                <p class="subtext">A Rails app in which we implemented full CRUD.</p>
+                <hr/>
+                <!-- <p class="subtext">View Here</p> -->
+            </div>
+            <div class="project_card">
+                <img class="project-image" src = "./src/images/download.jpeg" alt = "Construction"/>
+                <h3>Project Two</h3>
+                <p class="subtext">Excuse the mess...This project is currently under construction.</p>
+                <hr/>
+                <!-- <p class="subtext">View Here</p> -->
+            </div>
+        <!-- <div class="project_card"></div> -->
+        </div>
     </section>
     <br>
     
     <section class="contact" id="contact">
-        <h1>Lets create something together!</h1>
-        <div class="form">
-            <form >
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email">
-            </form>
-        </div>
-        <br/>
-        <br/>
-        <br/>
+        <h2>Let's create something together!</h2>
+        <div class="email">   
+            <i class="fa-solid fa-paper-plane" ></i>
+            <a href="mailto:genemartinez.dev@gmail.com">genemartinez.dev@gmail.com</a>
+        </div> 
         <div class="icons">
             <a href="https://github.com/Genemichael25" title="Github"><i class="fa-brands fa-github fa-5x"></i></a>
-            <i class="fa-brands fa-linkedin fa-5x"></i>
+            <a href="https://www.linkedin.com/in/gene-martinez/" title="linkedin"><i class="fa-brands fa-linkedin fa-5x"></i></a>
         </div>
     </section>
 </body>
